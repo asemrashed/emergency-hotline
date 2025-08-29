@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Emergency-Hotline</title>
+</head>
+<body>
+    <!-- navbar -->
+    <section class="max-w-[1800px] h-[100px] flex items-center justify-between mx-auto px-3">
+        <div class="flex items-center gap-3">
+            <img src="./assets/logo.png" class="w-[50px] h-[50px] rounded-full" alt="logo">
+            <h2 class="text-xl font-extrabold text-[#006747]">Emergency <br/> Hotline</h2>
+        </div>
+        <div class="flex gap-5">
+            <div class="flex items-center px-6 py-2 rounded-full bg-[#41FF6B1A] gap-1">
+                <span class="font-bold">0</span>
+                <img src="./assets/heart.png" class="w-[30px] h-[30px] ml-2" alt="heart">
+            </div>
+            <div class="flex items-center px-6 py-2 rounded-full bg-[#41FF6B1A] gap-1">
+                <span class="font-bold">100</span>
+                <img src="./assets/coin.png" class="w-[24px] h-[24px] ml-2" alt="coin">
+            </div>
+            <div class="flex items-center px-6 py-2 rounded-full bg-[#00A63E]">
+                <p class="text-white"><span class="mr-1">2</span>Copy</p>
+            </div>
+        </div>
+    </section>
+    <!-- Hero baner -->
+     <section class="max-w-[1920px] h-[240px] flex items-center justify-center mx-auto bg-gradient-to-r from-[#013223]  via-[#006747] to-[#013223]">
+        <div class="text-center flex flex-col items-center gap-3 my-1">
+            <img src="./assets/logo.png" alt="logo" class="w-21 md:w-23 h-21 md:h-23">
+            <h1 class="text-2xl md:text-4xl font-extrabold text-white">Emergency Service Directory</h1>
+            <p class="text-md md:text-xl text-white">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+        </div>
+     </section>
+     <!-- services -->
+      <section class="max-w-[1920px] flex flex-col lg:flex-row mx-auto bg-[#F5FFF6]">
+        <div class="max-w-[1800px] grid md:grid-cols-3 lg:grid-cols-4 items-center justify-between mx-auto pt-8 px-3 gap-7">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 md:col-span-2 lg:col-span-3 gap-7">
+                <div class="flex flex-col bg-white p-8 rounded-lg shadow-lg gap-4">
+                    <div class="flex items-center justify-between">
+                        <img src="./assets/emergency.png" class="w-12 md:w-15 h-12 md:h-15 rounded-lg bg-[#FFE3E2]" alt="emergency">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <h1 class="text-xl lg:text-2xl text-[#111111] font-bold font-inter">National Emergency Number</h1>
+                        <p class="text-base text-[#111111] mt-1">National Emergency</p>
+                        <h1 class="text-2xl lg:text-3xl text-[#111111] font-bold font-inter mt-4">999</h1>
+                        <!-- why this p is taking full widt, I want it in inline system where it won't take space like a block element -->
+                        <div class="mt-2 ">
+                            <span class="text-[#111111] bg-[#F2F2F2] rounded-lg px-4 py-1.5">All</span>
+                        </div>
+                        <div class="flex mt-4 gap-2">
+                            <button class="flex-1 text-[#35C5C5C] py-2 rounded-lg outline">
+                                <i class="fa-regular fa-copy"></i>
+                                Copy
+                            </button>
+                            <button class="flex-1 bg-[#00A63E] text-white py-2 rounded-lg">
+                                <i class="fa-solid fa-phone"></i>
+                                Call
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col p-8 rounded-3 shadow-lg gap-4">
+                    <div class="flex items-center justify-between">
+                        <img src="./assets/emergency.png" class="w-15 h-15 rounded-lg bg-[#FFE3E2]" alt="emergency">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <h1 class="text-2xl text-[#111111] font-bold font-inter">National Emergency Number</h1>
+                        <p class="text-base text-[#111111] mt-1">National Emergency</p>
+                        <h1 class="text-3xl text-[#111111] font-bold font-inter mt-4">999</h1>
+                        <!-- why this p is taking full widt, I want it in inline system where it won't take space like a block element -->
+                        <div>
+                            <span class="text-[#111111] bg-[#F2F2F2] mt-2 rounded-lg px-4 py-1.5">All</span>
+                        </div>
+                        <div class="flex mt-4 gap-2">
+                            <button class="flex-1 text-[#35C5C5C] py-2 rounded-lg outline">
+                                <i class="fa-regular fa-copy"></i>
+                                Copy
+                            </button>
+                            <button class="flex-1 bg-[#00A63E] text-white py-2 rounded-lg">
+                                <i class="fa-solid fa-phone"></i>
+                                Call
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col p-8 rounded-3 shadow-lg gap-4">
+                    <div class="flex items-center justify-between">
+                        <img src="./assets/emergency.png" class="w-15 h-15 rounded-lg bg-[#FFE3E2]" alt="emergency">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <h1 class="text-2xl text-[#111111] font-bold font-inter">National Emergency Number</h1>
+                        <p class="text-base text-[#111111] mt-1">National Emergency</p>
+                        <h1 class="text-3xl text-[#111111] font-bold font-inter mt-4">999</h1>
+                        <!-- why this p is taking full widt, I want it in inline system where it won't take space like a block element -->
+                        <div>
+                            <span class="text-[#111111] bg-[#F2F2F2] mt-2 rounded-lg px-4 py-1.5">All</span>
+                        </div>
+                        <div class="flex mt-4 gap-2">
+                            <button class="flex-1 text-[#35C5C5C] py-2 rounded-lg outline">
+                                <i class="fa-regular fa-copy"></i>
+                                Copy
+                            </button>
+                            <button class="flex-1 bg-[#00A63E] text-white py-2 rounded-lg">
+                                <i class="fa-solid fa-phone"></i>
+                                Call
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col p-8 rounded-3 shadow-lg gap-4">
+                    <div class="flex items-center justify-between">
+                        <img src="./assets/emergency.png" class="w-15 h-15 rounded-lg bg-[#FFE3E2]" alt="emergency">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <h1 class="text-2xl text-[#111111] font-bold font-inter">National Emergency Number</h1>
+                        <p class="text-base text-[#111111] mt-1">National Emergency</p>
+                        <h1 class="text-3xl text-[#111111] font-bold font-inter mt-4">999</h1>
+                        <!-- why this p is taking full widt, I want it in inline system where it won't take space like a block element -->
+                        <div>
+                            <span class="text-[#111111] bg-[#F2F2F2] mt-2 rounded-lg px-4 py-1.5">All</span>
+                        </div>
+                        <div class="flex mt-4 gap-2">
+                            <button class="flex-1 text-[#35C5C5C] py-2 rounded-lg outline">
+                                <i class="fa-regular fa-copy"></i>
+                                Copy
+                            </button>
+                            <button class="flex-1 bg-[#00A63E] text-white py-2 rounded-lg">
+                                <i class="fa-solid fa-phone"></i>
+                                Call
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col p-8 rounded-3 shadow-lg gap-4">
+                    <div class="flex items-center justify-between">
+                        <img src="./assets/emergency.png" class="w-15 h-15 rounded-lg bg-[#FFE3E2]" alt="emergency">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <h1 class="text-2xl text-[#111111] font-bold font-inter">National Emergency Number</h1>
+                        <p class="text-base text-[#111111] mt-1">National Emergency</p>
+                        <h1 class="text-3xl text-[#111111] font-bold font-inter mt-4">999</h1>
+                        <!-- why this p is taking full widt, I want it in inline system where it won't take space like a block element -->
+                        <div>
+                            <span class="text-[#111111] bg-[#F2F2F2] mt-2 rounded-lg px-4 py-1.5">All</span>
+                        </div>
+                        <div class="flex mt-4 gap-2">
+                            <button class="flex-1 text-[#35C5C5C] py-2 rounded-lg outline">
+                                <i class="fa-regular fa-copy"></i>
+                                Copy
+                            </button>
+                            <button class="flex-1 bg-[#00A63E] text-white py-2 rounded-lg">
+                                <i class="fa-solid fa-phone"></i>
+                                Call
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col p-8 rounded-3 shadow-lg gap-4">
+                    <div class="flex items-center justify-between">
+                        <img src="./assets/emergency.png" class="w-15 h-15 rounded-lg bg-[#FFE3E2]" alt="emergency">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <h1 class="text-2xl text-[#111111] font-bold font-inter">National Emergency Number</h1>
+                        <p class="text-base text-[#111111] mt-1">National Emergency</p>
+                        <h1 class="text-3xl text-[#111111] font-bold font-inter mt-4">999</h1>
+                        <!-- why this p is taking full widt, I want it in inline system where it won't take space like a block element -->
+                        <div>
+                            <span class="text-[#111111] bg-[#F2F2F2] mt-2 rounded-lg px-4 py-1.5">All</span>
+                        </div>
+                        <div class="flex mt-4 gap-2">
+                            <button class="flex-1 text-[#35C5C5C] py-2 rounded-lg outline">
+                                <i class="fa-regular fa-copy"></i>
+                                Copy
+                            </button>
+                            <button class="flex-1 bg-[#00A63E] text-white py-2 rounded-lg">
+                                <i class="fa-solid fa-phone"></i>
+                                Call
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col p-8 rounded-3 shadow-lg gap-4">
+                    <div class="flex items-center justify-between">
+                        <img src="./assets/emergency.png" class="w-15 h-15 rounded-lg bg-[#FFE3E2]" alt="emergency">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <h1 class="text-2xl text-[#111111] font-bold font-inter">National Emergency Number</h1>
+                        <p class="text-base text-[#111111] mt-1">National Emergency</p>
+                        <h1 class="text-3xl text-[#111111] font-bold font-inter mt-4">999</h1>
+                        <!-- why this p is taking full widt, I want it in inline system where it won't take space like a block element -->
+                        <div>
+                            <span class="text-[#111111] bg-[#F2F2F2] mt-2 rounded-lg px-4 py-1.5">All</span>
+                        </div>
+                        <div class="flex mt-4 gap-2">
+                            <button class="flex-1 text-[#35C5C5C] py-2 rounded-lg outline">
+                                <i class="fa-regular fa-copy"></i>
+                                Copy
+                            </button>
+                            <button class="flex-1 bg-[#00A63E] text-white py-2 rounded-lg">
+                                <i class="fa-solid fa-phone"></i>
+                                Call
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col p-8 rounded-3 shadow-lg gap-4">
+                    <div class="flex items-center justify-between">
+                        <img src="./assets/emergency.png" class="w-15 h-15 rounded-lg bg-[#FFE3E2]" alt="emergency">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <h1 class="text-2xl text-[#111111] font-bold font-inter">National Emergency Number</h1>
+                        <p class="text-base text-[#111111] mt-1">National Emergency</p>
+                        <h1 class="text-3xl text-[#111111] font-bold font-inter mt-4">999</h1>
+                        <!-- why this p is taking full widt, I want it in inline system where it won't take space like a block element -->
+                        <div>
+                            <span class="text-[#111111] bg-[#F2F2F2] mt-2 rounded-lg px-4 py-1.5">All</span>
+                        </div>
+                        <div class="flex mt-4 gap-2">
+                            <button class="flex-1 text-[#35C5C5C] py-2 rounded-lg outline">
+                                <i class="fa-regular fa-copy"></i>
+                                Copy
+                            </button>
+                            <button class="flex-1 bg-[#00A63E] text-white py-2 rounded-lg">
+                                <i class="fa-solid fa-phone"></i>
+                                Call
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col p-8 rounded-3 shadow-lg gap-4">
+                    <div class="flex items-center justify-between">
+                        <img src="./assets/emergency.png" class="w-15 h-15 rounded-lg bg-[#FFE3E2]" alt="emergency">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <h1 class="text-2xl text-[#111111] font-bold font-inter">National Emergency Number</h1>
+                        <p class="text-base text-[#111111] mt-1">National Emergency</p>
+                        <h1 class="text-3xl text-[#111111] font-bold font-inter mt-4">999</h1>
+                        <!-- why this p is taking full widt, I want it in inline system where it won't take space like a block element -->
+                        <div>
+                            <span class="text-[#111111] bg-[#F2F2F2] mt-2 rounded-lg px-4 py-1.5">All</span>
+                        </div>
+                        <div class="flex mt-4 gap-2">
+                            <button class="flex-1 text-[#35C5C5C] py-2 rounded-lg outline">
+                                <i class="fa-regular fa-copy"></i>
+                                Copy
+                            </button>
+                            <button class="flex-1 bg-[#00A63E] text-white py-2 rounded-lg">
+                                <i class="fa-solid fa-phone"></i>
+                                Call
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col rounded-xs bg-white h-full lg:mt-5 p-6 gap-3">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-regular fa-clock"></i>
+                        <span class="text-xl">Call History</span>
+                    </div>
+                    <button class="bg-[#00A63E] text-white px-8 py-3 rounded-3xl">
+                        Clear
+                    </button>
+                </div>
+                <div class="flex items-center justify-between bg-[#FAFAFA] p-4">
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold">Fire Service Number</h3>
+                        <p class="text-lg text-[#5C5C5C]">999</p>
+                    </div>
+                    <div class="text-lg">11:36:58 AM</div>
+                </div>
+                <div class="flex items-center justify-between bg-[#FAFAFA] p-4">
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold">Fire Service Number</h3>
+                        <p class="text-lg text-[#5C5C5C]">999</p>
+                    </div>
+                    <div class="text-lg">11:36:58 AM</div>
+                </div>
+            </div>
+        </div>
+      </section>
+</body>
+</html>
