@@ -116,7 +116,35 @@ You have to create a `Readme.md` file. and write down following questions. Dont 
 4. What is **Event Delegation** in JavaScript? Why is it useful?
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
 
----
+------------------------ANS---------------------------
+Ans 1: 
+**getElementById**: We can only catch element from js via ID name. it use for indivedual operation.
+**getElementsByClassName**: We use this when we need to catch all the class with same name, when we want a functionality in every class we use this. 
+**querySelector**: When we want the first match with css selector. its live
+**querySelectorAll**: When wen want all the matching css selector we use this. its not live, it's mean the changes will not show in real time.
+
+ANS 2: 
+**create and insert a new element into the DOM**
+one way, create a new element then add InnerHTML/Text to it. 
+or other way is.
+1st, stored the parent in a variable with selector.
+2nd, create a new element by using document.createElelement().
+3rd, add what I need in this element, like InnerHTML/Text.
+4th, append this as a child to the parent that stored in a variable.
+
+ANS 3:
+**Event Bubbling**: We use event(click, keyUp/down/press, etc) in a targeted element, when browser listen & triger the event its propogate to its immidiet parent, if there also another event targeted then it will also listened by the browser, then to it's immidiet parent, Its work that way upwords. 
+
+ANS 4: 
+**Event Delegation** : When a event handled by a parents element for child elements. In that way we don't need to add event listener to every child. 
+Its usefull because its not time effeciant, less coding, less storage, futureproof if new child added. 
+
+ANS 5: 
+**preventDefault() vs stopPropagation()**:
+when we use a button in a form without fixed the type then user click the button it will submit the form, so we use preventDefault() to prevent this. 
+on the other hand, when we add events in child & don't want it to propagate through parents we use stopPropagation(). 
+
+------------------------END---------------------------
 
 ## 🧪 Challenges Part (10 Marks)
 
