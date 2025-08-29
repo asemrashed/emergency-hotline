@@ -1,3 +1,4 @@
+//heart count
 const hearts = document.getElementById("hearts");
 const heartButtons = document.getElementsByClassName("heart");
 let heartsCount = 0;
@@ -16,6 +17,7 @@ for (let i = 0; i < heartButtons.length; i++) {
     });
 }
 
+//copy count
 const copies = document.getElementById("copies");
 const copyButtons = document.getElementsByClassName("copy");
 let copiesCount = 0;
@@ -36,6 +38,7 @@ for (let i = 0; i < copyButtons.length; i++) {
   });
 }
 
+//calls functionality + calls history
 const coins = document.getElementById("coins");
 const callBtn = document.getElementsByClassName('call-btn')
 const history = document.getElementById("history");
