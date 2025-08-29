@@ -46,22 +46,22 @@ let coinsCount = 100;
 for (let i = 0; i < callBtn.length; i++) {
     callBtn[i].addEventListener("click", function () {
         if (coinsCount < 20) {
-        alert("You don't have enough coins to make a call.");
-    } else {
-        alert(`Calling ${callBtn[i].closest(".card").querySelector("p").innerText} at ${callBtn[i].closest(".card").querySelector("h2").innerText}`)
-        coinsCount -= 20;
-        const div = document.createElement("div");
-        div.innerHTML += `<div class="card-item flex items-center justify-between bg-[#FAFAFA] rounded-lg py-2">
-                    <div class="flex flex-col w-3/5 ml-2">
-                        <h3 class="text-lg font-semibold">${callBtn[i].closest(".card").querySelector("h1").innerText}</h3>
-                        <p class="text-lg text-[#5C5C5C]">${callBtn[i].closest(".card").querySelector("h2").innerText}</p>
-                    </div>
-                    <div class="text-lg mr-2">${new Date().toLocaleTimeString()}</div>
-                </div>`;
-            history.appendChild(div);
-    }
-    coins.innerText = coinsCount;
-    })
+        alert(`❌ You don't have enough coins to make a call.`);
+        } else {
+            alert(`Calling ${callBtn[i].closest(".card").querySelector("p").innerText} at ${callBtn[i].closest(".card").querySelector("h2").innerText}`)
+            coinsCount -= 20;
+            const div = document.createElement("div");
+            div.innerHTML += `<div class="card-item flex items-center justify-between bg-[#FAFAFA] rounded-lg py-2">
+                        <div class="flex flex-col w-3/5 ml-2">
+                            <h3 class="text-lg font-semibold">${callBtn[i].closest(".card").querySelector("h1").innerText}</h3>
+                            <p class="text-lg text-[#5C5C5C]">${callBtn[i].closest(".card").querySelector("h2").innerText}</p>
+                        </div>
+                        <div class="text-lg mr-2">${new Date().toLocaleTimeString()}</div>
+                    </div>`;
+                history.appendChild(div);
+        }
+        coins.innerText = coinsCount;
+        })
 }
 const clearBtn = document.getElementById("clear-btn");
 const cardItem = document.getElementsByClassName("card-item");
