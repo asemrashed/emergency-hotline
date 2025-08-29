@@ -6,9 +6,11 @@ for (let i = 0; i < heartButtons.length; i++) {
         if (heartButtons[i].classList.contains("active")) {
             heartButtons[i].classList.remove("active");
             heartsCount--;
+            heartButtons[i].innerHTML = `<i class="fa-regular fa-heart"></i>`;
         } else {
             heartButtons[i].classList.add("active");
             heartsCount++;
+            heartButtons[i].innerHTML = `<i class="fa-solid fa-heart text-red-700"></i>`;
         }
         hearts.innerText = heartsCount;
     });
@@ -43,7 +45,7 @@ for (let i = 0; i < callBtn.length; i++) {
         if (coinsCount < 20) {
         alert("You don't have enough coins to make a call.");
     } else {
-        alert(`Calling ${callBtn[i].closest(".card").querySelector("h1").innerText} at ${callBtn[i].closest(".card").querySelector("h2").innerText}`)
+        alert(`Calling ${callBtn[i].closest(".card").querySelector("p").innerText} at ${callBtn[i].closest(".card").querySelector("h2").innerText}`)
         coinsCount -= 20;
         const div = document.createElement("div");
         div.innerHTML += `<div class="card-item flex items-center justify-between bg-[#FAFAFA] rounded-lg py-2">
